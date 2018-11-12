@@ -6,7 +6,7 @@
 #    By: pbondoer <pbondoer@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/12/01 21:02:30 by pbondoer          #+#    #+#              #
-#    Updated: 2018/11/12 20:59:50 by pbondoer         ###   ########.fr        #
+#    Updated: 2018/11/12 21:30:34 by pbondoer         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ OBJ		:= $(addprefix $(OBJ_DIR)/,$(SRC:.c=.o))
 
 # compiler
 CC		:= gcc
-CFLAGS	:= -Wall -Wextra -Werror -Weverything -pedantic
+CFLAGS	:= -Wall -Wextra -Werror -Wvla -pedantic
 CFLAGS	+= -O3 -march=native -pipe -flto -fwhole-program
 
 # libraries
